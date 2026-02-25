@@ -64,7 +64,7 @@ function Home() {
                   </p>
                 </div>
                 <div className="img1">
-                    <img src="img/abdm.png" alt="ABDM" className="slide-img" />
+                    <img src="/img/abdm.png" alt="ABDM" className="slide-img" />
                 </div>
               </div>
             </div>
@@ -81,7 +81,7 @@ function Home() {
                     <i className="fa-solid fa-right-to-bracket"></i> Registration
                   </Link>
                 </div>
-                <img src="img/ORS1.png" alt="ORS" className="slide-img" />
+                <img src="/img/ORS1.png" alt="ORS" className="slide-img" />
               </div>
             </div>
 
@@ -96,7 +96,7 @@ function Home() {
                     <i className="fa-solid fa-right-to-bracket"></i> Registration
                   </Link>
                 </div>
-                <img src="img/SMS_NEW.png" alt="Tele Consultation" className="slide-img" />
+                <img src="/img/SMS_NEW.png" alt="Tele Consultation" className="slide-img" />
               </div>
             </div>
 

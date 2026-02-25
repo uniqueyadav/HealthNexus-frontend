@@ -30,7 +30,7 @@ import { Link } from "react-router-dom";
       {/* 🧭 Navigation Bar */}
       <nav className="main-nav">
         <div className="nav-left">
-          <img src="img/ors_logo.png" alt="ORS Logo" className="ors-logo" />
+          <img src="/img/ors_logo.png" alt="ORS Logo" className="ors-logo" />
           <h2>Online Hospital Information System</h2>
         </div>
 

@@ -62,7 +62,7 @@ function Login() {
             <div className="col-md-8">
               <div className="login-image">
             <img
-              src="img/login.jpg"
+              src="/img/login.jpg"
               alt="Doctor"
             />
           </div>
