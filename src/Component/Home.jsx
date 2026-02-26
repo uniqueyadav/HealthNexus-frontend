@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import {Link, useNavigate } from 'react-router-dom';
 import Footer from './Footer';
-import axios from 'axios';
+import API from '../utils/api';
 
 function Home() {
   const [news,setNews] = useState([]);
   async function getnews() {
-    const response = await axios.get('http://localhost:8000/api/news');
+    const response = await API.get('/news');
     if(response.data.msg=="Success"){
       setNews(response.data.value);
     }
