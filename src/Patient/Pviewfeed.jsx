@@ -13,7 +13,7 @@ function Pviewfeed() {
   // ✅ Fetch feedback
   const getFeed = async () => {
     try {
-      const response = await axios.get(
+      const response = await API.get(
         `/feed/u/${localStorage.getItem("reg")}`
       );
       if (response.data.msg === "Success") {
@@ -84,7 +84,7 @@ function Pviewfeed() {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <i className="fa-solid fa-bars"></i>
+              <i className="fa-solid fa-bars text-dark"></i>
             </button>
             <ul className="dropdown-menu">
               <li><Link to="/patientdash" className="dropdown-item">Dashboard</Link></li>
