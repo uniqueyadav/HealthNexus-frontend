@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
  function Header() {
   return (
     <>
-      {/* 🌐 Top Header */}
       <div className="row">
       <header className="top-header ">
         <div className="left">

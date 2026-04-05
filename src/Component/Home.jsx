@@ -112,7 +112,7 @@ function Home() {
 
         <div className="col-md-12">
           <div className="row">
-            <div className="col-md-1 mx-auto box1"></div>
+            {/* <div className="col-md-1 mx-auto box1"></div> */}
             <div className="col-md-3 mx-auto box1 reveal">
               <div className="row py-3">
                 <div className="col-md-10 fs-5 fw-bold">BEST CHECKUP</div>
@@ -141,12 +141,12 @@ function Home() {
                 <div className="col-md-2 text-info fw-bold fs-3">03</div>
               </div>
               <div className="row">
-                <div className="col-md-12 fs-5">
+                <div className="col-md-12 fs-5 ">
                   <p>We provide around the clock monitoring for mission-critical, customer-facing applications. Our skilled Doctors are ready to respond to and resolve incidents 24/7, 365.</p>
                 </div>
               </div>
             </div>
-            <div className="col-md-1 mx-auto box1"></div>
+            {/* <div className="col-md-1 mx-auto box1"></div> */}
           </div>
         </div>
       </div>
