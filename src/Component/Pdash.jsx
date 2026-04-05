@@ -130,25 +130,25 @@ function Pdash() {
             <div className="row text-center">
 
               <div className="col-md-3 mb-2">
-                <Link to="/preqappointment" className="btn btn-outline-primary w-100">
+                <Link to="/preqappointment" className="btn btn-outline-primary w-100 text-dark">
                   Request Appointment
                 </Link>
               </div>
 
               <div className="col-md-3 mb-2">
-                <Link to="/patientappointment" className="btn btn-outline-success w-100">
+                <Link to="/patientappointment" className="btn btn-outline-success w-100 text-dark">
                   View Appointments
                 </Link>
               </div>
 
               <div className="col-md-3 mb-2">
-                <Link to="/patientfeed" className="btn btn-outline-warning w-100">
+                <Link to="/patientfeed" className="btn btn-outline-warning w-100 text-dark">
                   Give Feedback
                 </Link>
               </div>
 
               <div className="col-md-3 mb-2">
-                <Link to="/patientviewfeed" className="btn btn-outline-info w-100">
+                <Link to="/patientviewfeed" className="btn btn-outline-info w-100 text-dark">
                   View Feedback
                 </Link>
               </div>

@@ -50,7 +50,7 @@ function Viewapp() {
               <FaUserMd className="me-2 fs-3" /> Admin Dashboard </div>
               <div className="col-md-2 ms-auto text-end">
                  <button
-                   onClick={() => { localStorage.removeItem("admin"); validation(); }} className="btn btn-light fw-bold px-4 py-1 rounded-pill shadow-sm" >
+                   onClick={() => { localStorage.removeItem("admin"); validation(); }} className="btn btn-light fw-bold px-4 py-1 rounded-pill shadow-sm text-dark" >
                    <FaSignOutAlt className="me-2" />  Logout
                   </button>
                </div>
@@ -73,7 +73,7 @@ function Viewapp() {
                 activeFilter === "completed"
                   ? "btn-success"
                   : "btn-outline-success"
-              } d-flex align-items-center gap-2 fw-semibold`}
+              } d-flex align-items-center gap-2 fw-semibold text-dark`}
             >
               <FaClipboardCheck /> Completed
             </button>
@@ -83,7 +83,7 @@ function Viewapp() {
                 activeFilter === "confirmed"
                   ? "btn-info text-white"
                   : "btn-outline-info"
-              } d-flex align-items-center gap-2 fw-semibold`}
+              } d-flex align-items-center gap-2 fw-semibold text-dark`}
             >
               <FaCheckCircle /> Confirmed
             </button>
@@ -93,7 +93,7 @@ function Viewapp() {
                 activeFilter === "pending"
                   ? "btn-warning text-dark"
                   : "btn-outline-warning"
-              } d-flex align-items-center gap-2 fw-semibold`}
+              } d-flex align-items-center gap-2 fw-semibold text-dark`}
             >
               <FaClock /> Pending
             </button>
@@ -103,7 +103,7 @@ function Viewapp() {
                 activeFilter === "cancelled"
                   ? "btn-danger"
                   : "btn-outline-danger"
-              } d-flex align-items-center gap-2 fw-semibold`}
+              } d-flex align-items-center gap-2 fw-semibold text-dark`}
             >
               <FaTimesCircle /> Cancelled
             </button>

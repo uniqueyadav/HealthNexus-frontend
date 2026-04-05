@@ -61,7 +61,7 @@ function Addd() {
               <FaUserMd className="me-2 fs-3" /> Admin Dashboard </div>
               <div className="col-md-2 ms-auto text-end">
                  <button
-                   onClick={() => { localStorage.removeItem("admin"); validation(); }} className="btn btn-light fw-bold px-4 py-1 rounded-pill shadow-sm" >
+                   onClick={() => { localStorage.removeItem("admin"); validation(); }} className="btn btn-light fw-bold px-4 py-1 rounded-pill shadow-sm text-dark" >
                    <FaSignOutAlt className="me-2" />  Logout
                   </button>
                </div>

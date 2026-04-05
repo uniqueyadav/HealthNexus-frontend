@@ -31,9 +31,7 @@ function Adlogin() {
   }
 
   return (
-    <>
-    {/* start login page */}
-    
+    <>    
     <div className="login-page">
       <form className="containe" onSubmit={adlog}>
         <h1 className="login-title">👨‍💼 Admin Login </h1>
@@ -50,41 +48,6 @@ function Adlogin() {
         <button className="login-button" type="submit">Login </button>
     </form>
     </div>
-
-    {/* end login page */}
-      {/* <div className="admin-login-page">
-        <div className="admin-login-card">
-          <h2>👨‍💼 Admin Login</h2>
-          <p className="subtitle">Welcome back! Please login to continue</p>
-
-          <form onSubmit={adlog}>
-            <div className="form-group">
-              <label>Email Address</label>
-              <input className="login-box"
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your admin email"
-                required
-              />
-            </div>
-
-            <div className="form-group ">
-              <label>Password</label>
-              <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Enter your password"
-                required
-              />
-            </div>
-
-            <button type="submit" className="login-btn">Login</button>
-          </form>
-        </div>
-      </div> */}
-
       <Footer />
     </>
   );

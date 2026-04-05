@@ -76,7 +76,7 @@ function Preqapp() {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <i className="fa-solid fa-bars"></i>
+                    <i className="fa-solid fa-bars text-dark"></i>
                   </button>
                   <ul className="dropdown-menu">
                     <li><Link to="/patientdash" className="dropdown-item">Dashboard</Link></li>

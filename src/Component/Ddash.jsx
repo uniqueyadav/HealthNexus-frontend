@@ -56,7 +56,7 @@ function Ddash() {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <i className="fas fa-bars"></i>
+              <i className="fas fa-bars text-dark"></i>
             </button>
             <ul className="dropdown-menu">
               <li><Link className="dropdown-item" to="/doctorappointment">Dashboard</Link></li>
