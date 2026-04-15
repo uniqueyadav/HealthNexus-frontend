@@ -70,14 +70,15 @@ function Canapp() {
             <button className="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i className="fas fa-bars text-dark"></i>
             </button>
-            <ul className="dropdown-menu">
-              <li><Link className="dropdown-item" to={'/doctorappointment'}>Dashboard</Link></li>
-              <li><Link className="dropdown-item" to={'/pendingapp'}>Pending</Link></li>
-              <li><Link className="dropdown-item" to={'/cancelapp'}>Cancelled</Link></li>
-              <li><Link className="dropdown-item" to={'/confirmeapp'}>Confirmed</Link></li>
-              <li><Link className="dropdown-item" to={'/completeapp'}>Completed</Link></li>
-              <li><Link to={"/change-password"} className="dropdown-item">Change Password</Link></li>
-            </ul>
+             <ul className="dropdown-menu">
+                <li><Link className=" btn btn-outline-info w-100 text-dark rounded-0" to="/doctorappointment">Dashboard</Link></li>
+                <li><Link className="btn btn-outline-info w-100 text-dark rounded-0" to="/pendingapp">Pending</Link></li>
+                <li><Link className="btn btn-outline-info w-100 text-dark rounded-0" to="/cancelapp">Cancelled</Link></li>
+                <li><Link className="btn btn-outline-info w-100 text-dark rounded-0" to="/confirmeapp">Confirmed</Link></li>
+                <li><Link className="btn btn-outline-info w-100 text-dark rounded-0" to="/completeapp">Completed</Link></li>
+                <li><Link to={"/change-password"} className="dropdown-item ">Change Password</Link></li>
+                <li><Link className="btn btn-outline-info w-100 text-dark rounded-0" to="/prescription">Prescription</Link></li>
+              </ul>
           </div>
         </div>
         <div className="col-md-2 text-center">

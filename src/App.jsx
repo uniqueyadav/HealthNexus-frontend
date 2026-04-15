@@ -26,12 +26,14 @@ import Penapp from './Doctor/Penapp';
 import Canapp from './Doctor/Canapp';
 import Conapp from './Doctor/Conapp';
 import Comapp from './Doctor/Comapp';
+import Prescription from './Doctor/Prescription';
 import Pviewfeed from './Patient/Pviewfeed';
 import Home from './Component/Home';
 import Header from './Component/Header';
 import ChangePassword from './Component/ChangePassword';
 import ForgotPassword from './Pages/ForgotPassword';
 import { ToastContainer } from "react-toastify";
+import PPrescription from "./Patient/PPrescription";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -71,6 +73,8 @@ function App() {
         <Route path='/patientviewfeed' element={<Pviewfeed/>} />
         <Route path="/change-password" element={<ChangePassword />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/prescription" element={<Prescription/>} />
+        <Route path="/view-prescription" element={<PPrescription/>} />
       </Routes>
       <ToastContainer position="top-right" autoClose={2000} />
       </BrowserRouter>

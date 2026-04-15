@@ -118,12 +118,13 @@ function Pappointment() {
               <i className="fa-solid fa-bars text-dark"></i>
             </button>
             <ul className="dropdown-menu">
-              <li><Link to="/patientdash" className="dropdown-item">Dashboard</Link></li>
-              <li><Link to="/patientappointment" className="dropdown-item">Appointment</Link></li>
-              <li><Link to="/preqappointment" className="dropdown-item">Request Appointment</Link></li>
-              <li><Link to="/patientfeed" className="dropdown-item">Feedback</Link></li>
-              <li><Link to="/patientviewfeed" className="dropdown-item">View Feedback</Link></li>
-              <li><Link to={"/change-password"} className="dropdown-item">Change Password</Link></li>
+              <li><Link to={'/patientdash'} className="btn btn-outline-info w-100 text-dark rounded-0 dropdown-item " >Dashboard</Link></li>
+              <li><Link to={'/patientappointment'} className="btn btn-outline-info w-100 text-dark rounded-0 dropdown-item " >Appointment</Link></li>
+              <li><Link to={'/preqappointment'} className="btn btn-outline-info w-100 text-dark rounded-0 dropdown-item " >Request Appointment</Link></li>
+              <li><Link to={'/patientfeed'} className="btn btn-outline-info w-100 text-dark rounded-0 dropdown-item " >Feedback</Link></li>
+              <li><Link to={'/patientviewfeed'} className="btn btn-outline-info w-100 text-dark rounded-0 dropdown-item " >View Feedback</Link></li>
+              <li><Link to={"/change-password"} className="btn btn-outline-info w-100 text-dark rounded-0 dropdown-item ">Change Password</Link></li>
+              <li><Link to="/view-prescription" className="btn btn-outline-info w-100 text-dark rounded-0">View Prescriptions</Link></li>
             </ul>
           </div>
         </div>
