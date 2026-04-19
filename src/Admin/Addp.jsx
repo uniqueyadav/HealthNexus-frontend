@@ -197,8 +197,8 @@ function Addp() {
                       <option value="B-">B-</option>
                       <option value="AB+">AB+</option>
                       <option value="AB-">AB-</option>
-                      <option value="O+">O+</option>
-                      <option value="O-">O-</option>
+                      <option value="O+">O</option>
+                      <option value="O-">NA</option>
                     </select>
                   </div>
 
@@ -213,6 +213,7 @@ function Addp() {
                       <option value="">-- Select Gender --</option>
                       <option value="Male">Male</option>
                       <option value="Female">Female</option>
+                      <option value="Transgender">Transgender</option>
                     </select>
                   </div>
 

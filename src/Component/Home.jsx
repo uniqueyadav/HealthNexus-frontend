@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {Link, useNavigate } from 'react-router-dom';
 import Footer from './Footer';
 import API from '../utils/api';
+import Header from './Header';
 
 function Home() {
   const [news,setNews] = useState([]);
@@ -39,6 +40,7 @@ function Home() {
   }, []);
   return (
     <>
+    <Header></Header>
     <div className="row">
       <div className="body1 py-4">
         <section className="about">

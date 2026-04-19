@@ -1153,7 +1153,7 @@ th {
 }
 
 
-/* Scrollbar Styling (Optional but sexy 😎) */
+/* Scrollbar Styling (Optional 😎) */
 
 .news-scroll::-webkit-scrollbar {
     width: 6px;
@@ -1184,192 +1184,252 @@ th {
     font-family: Arial, sans-serif;
 }
 
+
+/* LoginWrapper.css */
+
 .login-wrapper {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background: #eef3f9;
+    justify-content: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 20px;
 }
-
-
-/* Main Card */
 
 .login-card {
-    width: 80%;
-    height: 55vh;
-    display: flex;
-    border-radius: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    background: white;
+    max-width: 900px;
+    width: 100%;
 }
 
 
-/* LEFT SIDE */
+/* Image Section */
 
 .login-image {
-    flex: 1;
+    height: 100%;
+    min-height: 400px;
 }
 
 .login-image img {
     width: 100%;
-    height: 450px;
+    height: 100%;
     object-fit: cover;
 }
 
 
-/* RIGHT SIDE */
+/* Form Section */
 
 .login-form {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 60px;
-    background: #ffffff;
+    padding: 40px 30px;
 }
 
 .login-form h2 {
-    margin-bottom: 30px;
-    color: #1e5cc8;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px;
     text-align: center;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .login-form input,
 .login-form select {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 18px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.login-form input:focus,
+.login-form select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.login-form a {
+    text-decoration: none;
     font-size: 14px;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.login-form a:hover {
+    color: #0056b3;
+}
+
+.login-form span {
+    font-size: 14px;
+    color: #666;
 }
 
 .login-form button {
-    padding: 12px;
-    border-radius: 8px;
-    border: none;
-    background: #1e5cc8;
+    background-color: #007bff;
     color: white;
-    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background 0.3s ease;
+    margin-top: 10px;
 }
 
 .login-form button:hover {
-    background: #144a9c;
+    background-color: #0056b3;
 }
 
 
-/* Responsive */
+/* Responsive Queries */
+
+
+/* Tablet ke liye image hide kar sakte ho ya size chota */
 
 @media (max-width: 768px) {
-    .login-card {
-        flex-direction: column;
-        height: auto;
-    }
     .login-image {
-        height: 300px;
+        display: none;
+        /* Mobile par image hide kar di hai form focus ke liye */
+    }
+    .login-form {
+        padding: 30px 20px;
+    }
+    .login-card {
+        max-width: 450px;
     }
 }
 
 
-/* 🔵 Background Wrapper */
+/* Chote Mobile devices */
+
+@media (max-width: 480px) {
+    .login-wrapper {
+        padding: 10px;
+    }
+    .login-form h2 {
+        font-size: 24px;
+    }
+}
+
+
+/* ChangePassword.css */
 
 .change-wrapper {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    justify-content: center;
+    /* Aapke medical theme se match karta gradient */
+    background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+    padding: 20px;
     font-family: 'Poppins', sans-serif;
 }
 
-
-/* 🟢 Card Design */
-
 .change-card {
-    width: 400px;
+    background: #ffffff;
     padding: 40px;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
     text-align: center;
-    color: #fff;
-    animation: fadeIn 0.6s ease-in-out;
+    transition: transform 0.3s ease;
 }
 
-
-/* 🟣 Title */
+.change-card:hover {
+    transform: translateY(-5px);
+}
 
 .change-card h2 {
-    margin-bottom: 25px;
+    color: #333;
+    margin-bottom: 30px;
     font-weight: 600;
-    letter-spacing: 1px;
+    position: relative;
 }
 
 
-/* 🟡 Input Group */
+/* Heading ke niche ek choti line design ke liye */
+
+.change-card h2::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: #0072ff;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.change-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 .input-group {
-    margin-bottom: 20px;
-}
-
-.input-group input {
+    position: relative;
     width: 100%;
-    padding: 12px 15px;
-    border-radius: 12px;
-    border: none;
-    outline: none;
-    font-size: 14px;
-    transition: 0.3s ease;
 }
 
+.change-card input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 2px solid #e1e1e1;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
 
-/* Focus Effect */
+.change-card input:focus {
+    border-color: #0072ff;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 114, 255, 0.1);
+}
 
-.input-group input:focus {
-    box-shadow: 0 0 8px #ffffff;
+.change-card button {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0 5px 15px rgba(0, 114, 255, 0.3);
+}
+
+.change-card button:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    box-shadow: 0 8px 20px rgba(0, 114, 255, 0.4);
     transform: scale(1.02);
 }
 
 
-/* 🔴 Button */
+/* Mobile Responsiveness */
 
-.change-card button {
-    width: 100%;
-    padding: 12px;
-    border-radius: 12px;
-    border: none;
-    background: #ffffff;
-    color: #0072ff;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-
-/* Hover Effect */
-
-.change-card button:hover {
-    background: #0072ff;
-    color: #fff;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-
-/* Animation */
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+@media (max-width: 480px) {
+    .change-card {
+        padding: 30px 20px;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .change-card h2 {
+        font-size: 24px;
+    }
+    .change-card button {
+        font-size: 16px;
     }
 }
